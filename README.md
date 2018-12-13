@@ -52,6 +52,11 @@ For example, add both frozen sets and read-only views, and helpers to get from e
 - `snapshot` returns a frozen set copied from the original
 
 
+### True immutable data structures
+
+Add a new constructor whose instances are like sets, including the presence of mutating methods, except that these methods return a new object reflecting the change without changing the original.
+
+
 ## Notes
 
 - This discussion can be generalized to apply to maps as well as sets. It is less clear if it can be generalized to TypedArrays or other data types.
