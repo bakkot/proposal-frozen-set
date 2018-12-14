@@ -57,6 +57,11 @@ For example, add both frozen sets and read-only views, and helpers to get from e
 Add a new constructor whose instances are like sets, including the presence of mutating methods, except that these methods return a new object reflecting the change without changing the original.
 
 
+### `rekey`
+
+There's a [proposal](https://github.com/bmeck/proposal-richer-keys/tree/master/collection-rekey) to allow sets to specify how to interpret an object as a key in the set. If this allowed distinguishing between "use this object to query" and "use this object to mutate", which it is not currently proposed to, it would allow you to build a "freeze switch" which would cause the set to start rejecting attempts to mutate it (though it is not obvious how this could be used to prevent `.clear`).
+
+
 ## Notes
 
 - This discussion can be generalized to apply to maps as well as sets. It is less clear if it can be generalized to TypedArrays or other data types.
