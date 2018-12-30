@@ -6,6 +6,8 @@ Possibly it should! Let's discuss what that might look like in the issues on thi
 
 This is _not_ a formal proposal before TC39 unless and until I or another committee member present it, which is contingent on having both interest and time. Currently it is just a place for me and other interested people to kick around ideas.
 
+Note that "frozen" in this document means to "a set whose contents you can't change", like Python's `frozenset`. Because JS already has a slightly different notion of "frozen" from `Object.freeze`, we would probably want to call this something other than "frozen sets", such as `FixedSet` (see [#2](https://github.com/bakkot/proposal-frozen-set/issues/2)).
+
 
 ## The problem
 
