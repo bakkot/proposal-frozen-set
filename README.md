@@ -1,3 +1,6 @@
+**Note**: there is now a more active proposal over at [proposal-readonly-collections](https://github.com/tc39/proposal-readonly-collections). Your efforts are best directed there.
+
+
 # Frozen sets
 
 JavaScript has sets and objects. It has a convenient way of getting [frozen objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze). It has no convenient way to get frozen sets.
